@@ -36,7 +36,6 @@ console.log(next.value, next.done);
 // return() => 나 이제 그만할 거야, 끝내라는 의미.
 
 multiple.throw("Error!");
-// throw()를 이용하여 Error를 던진 다음에 next를 호출하면 어플리케이션이 죽음.
 
 next = multiple.next();
 console.log(next.value, next.done);

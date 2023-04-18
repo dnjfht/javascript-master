@@ -30,13 +30,7 @@ console.log(next.value, next.done);
 // 0
 // 0 false
 
-// multiple.return();
-// return을 하는 순간 제너레이터가 끝나게 됨.
-// 다음에 아무리 next를 호출해도 다음 값이 나오지 않고 끝남.
-// return() => 나 이제 그만할 거야, 끝내라는 의미.
-
-multiple.throw("Error!");
-// throw()를 이용하여 Error를 던진 다음에 next를 호출하면 어플리케이션이 죽음.
+multiple.return();
 
 next = multiple.next();
 console.log(next.value, next.done);
