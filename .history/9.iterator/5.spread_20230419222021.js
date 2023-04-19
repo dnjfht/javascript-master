@@ -35,10 +35,11 @@ console.log(arr);
 // [ '🍏', '🍓', '🍓', '🍑', '🥝' ]
 
 // Object
-const ellie = { name: "Ellie", age: 20, home: { address: "home" } };
+const ellie = { name: "Ellie", age: 20 };
 const updated = {
   ...ellie,
   job: "s/w engineer",
 };
 console.log(updated);
-// { name: 'Ellie', age: 20, home: { address: 'home' }, job: 's/w engineer' }
+{ name: 'Ellie', age: 20, job: 's/w engineer' }
+

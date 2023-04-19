@@ -41,4 +41,4 @@ const updated = {
   job: "s/w engineer",
 };
 console.log(updated);
-// { name: 'Ellie', age: 20, home: { address: 'home' }, job: 's/w engineer' }
+// { name: 'Ellie', age: 20, job: 's/w engineer' }
