@@ -29,7 +29,3 @@ const fruits1 = ["🍏", "🍓"];
 const fruits2 = ["🍑", "🥝"];
 let arr = fruits1.concat(fruits2);
 console.log(arr);
-// [ '🍏', '🍓', '🍑', '🥝' ]
-arr = [...fruits1, "🍓", ...fruits2];
-console.log(arr);
-// [ '🍏', '🍓', '🍓', '🍑', '🥝' ]

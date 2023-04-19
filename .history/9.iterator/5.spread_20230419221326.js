@@ -27,9 +27,3 @@ sum(1, 2, 0, 1, 2, 4);
 // Array Concat
 const fruits1 = ["🍏", "🍓"];
 const fruits2 = ["🍑", "🥝"];
-let arr = fruits1.concat(fruits2);
-console.log(arr);
-// [ '🍏', '🍓', '🍑', '🥝' ]
-arr = [...fruits1, "🍓", ...fruits2];
-console.log(arr);
-// [ '🍏', '🍓', '🍓', '🍑', '🥝' ]
