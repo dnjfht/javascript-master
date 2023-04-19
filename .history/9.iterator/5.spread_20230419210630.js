@@ -14,5 +14,3 @@ const nums = [1, 2, 3];
 // console.log(add(nums[0], nums[1], nums[2]));
 // 그런데 이 방법보다는,
 console.log(add(...nums));
-// 이렇게 한 번에 펼쳐주는 방식이 훨씬 간편함.
-// 6
