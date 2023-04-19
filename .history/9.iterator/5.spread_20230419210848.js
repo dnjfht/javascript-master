@@ -21,5 +21,3 @@ console.log(add(...nums));
 function sum(first, second, ...nums) {
   console.log(nums);
 }
-sum(1, 2, 0, 1, 2, 4);
-// 0, 1인덱스를 제외한 나머지가 나오게 됨
