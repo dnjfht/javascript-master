@@ -22,9 +22,7 @@ console.log(title); // strawberry
 console.log(emoji); // 🍓
 
 const ellie = { name: "Seungmin", age: 24, job: "s/w engineer" };
-function display({ name, age, job }) {
-  console.log("이름", name);
-  console.log("나이", age);
-  console.log("직업", job);
+function display(person) {
+  console.log("이름", person.name);
+  console.log("나이", person.age);
 }
-display(ellie);

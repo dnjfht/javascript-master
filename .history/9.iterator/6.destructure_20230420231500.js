@@ -27,4 +27,4 @@ function display({ name, age, job }) {
   console.log("나이", age);
   console.log("직업", job);
 }
-display(ellie);
+console.log(display(ellie));
