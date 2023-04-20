@@ -11,4 +11,4 @@ console.log(others); // [ '🍉', '🍒' ]
 const point = [1, 2];
 const [x, y] = point;
 console.log(y); // 2
-console.log(x); // 1
+console.log(x);
