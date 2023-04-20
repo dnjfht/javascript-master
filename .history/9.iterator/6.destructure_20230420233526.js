@@ -32,8 +32,5 @@ display(ellie);
 // 나이 24
 // 직업 s/w engineer
 
-const { name, age, job: occupation, pet = "강아지" } = ellie;
+const { name, age, job } = ellie;
 console.log(name); // Seungmin
-console.log(age); // 24
-console.log(occupation); // s/w engineer
-console.log(pet); // 강아지

@@ -21,7 +21,7 @@ const [title, emoji] = createEmoji();
 console.log(title); // strawberry
 console.log(emoji); // 🍓
 
-const ellie = { name: "Seungmin", age: 24, job: "s/w engineer" };
+const ellie = { name: "Seungmin", age: 24, job: "s/w engineer", pet: "강아지" };
 function display({ name, age, job }) {
   console.log("이름", name);
   console.log("나이", age);
@@ -32,8 +32,8 @@ display(ellie);
 // 나이 24
 // 직업 s/w engineer
 
-const { name, age, job: occupation, pet = "강아지" } = ellie;
+const { name, age, job, pet } = ellie;
 console.log(name); // Seungmin
 console.log(age); // 24
-console.log(occupation); // s/w engineer
+console.log(job); // s/w engineer
 console.log(pet); // 강아지
