@@ -9,14 +9,7 @@ console.log(second); // 🍑
 console.log(others); // [ '🍉', '🍒' ]
 
 const point = [1, 2, 8];
-const [x, y, z] = point;
+const [x, y] = point;
 console.log(x); // 1
 console.log(y); // 2
-console.log(z); // 8
-
-function createEmoji() {
-  return ["strawberry", "🍓"];
-}
-const [title, emoji] = createEmoji();
-console.log(title); // strawberry
-console.log(emoji); // 🍓
+console.log(z); // 3

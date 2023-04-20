@@ -13,10 +13,3 @@ const [x, y, z] = point;
 console.log(x); // 1
 console.log(y); // 2
 console.log(z); // 8
-
-function createEmoji() {
-  return ["strawberry", "🍓"];
-}
-const [title, emoji] = createEmoji();
-console.log(title); // strawberry
-console.log(emoji); // 🍓

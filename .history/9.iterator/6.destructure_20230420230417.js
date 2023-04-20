@@ -17,6 +17,4 @@ console.log(z); // 8
 function createEmoji() {
   return ["strawberry", "🍓"];
 }
-const [title, emoji] = createEmoji();
-console.log(title); // strawberry
-console.log(emoji); // 🍓
+const array = createEmoji();
