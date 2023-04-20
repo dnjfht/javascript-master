@@ -48,8 +48,7 @@ const prop = {
   },
 };
 
-// 구조 분해 할당도 중첩적으로 해나갈 수 있음.
-function changeColor({ styles: { color } }) {
+function changeColor({ name, styles { size= 20, color= "black" } }) {
   console.log(color);
 }
 
