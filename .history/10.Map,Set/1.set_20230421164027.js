@@ -46,11 +46,3 @@ console.log(set); // Set(0) {}
 const obj1 = { name: "🍓", price: 8 };
 const obj2 = { name: "🥝", price: 5 };
 const objs = new Set([obj1, obj2]);
-console.log(objs);
-// Set(2) { { name: '🍓', price: 8 }, { name: '🥝', price: 5 } }
-
-obj1.price = 10;
-objs.add(obj1);
-console.log(objs);
-// Set(2) { { name: '🍓', price: 10 }, { name: '🥝', price: 5 } }
-// 이미 objs에 obj1이 변경되어서 들어가 있기 때문에 중복된 건 다시 들어가지 않음
