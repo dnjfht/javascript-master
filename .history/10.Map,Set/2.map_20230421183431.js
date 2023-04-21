@@ -76,5 +76,4 @@ console.log(map2[key]);
 // undefined
 // object에서는 key에 바로 동적으로 접근할 수 없음.
 console.log(map2.get(key));
-// { name: 'milk', price: 10, description: '맛있는 우유' }
 // map에서 특정한 key를 찾으려면 get이라는 함수를 이용하여 key를 전달해서 해당하는 object를 받아올 수 있음.

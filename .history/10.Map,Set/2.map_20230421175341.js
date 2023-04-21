@@ -53,28 +53,3 @@ console.log(map);
 // map과 object와의 큰 차이점?
 const key = { name: "milk", price: 10 };
 const milk = { name: "milk", price: 10, description: "맛있는 우유" };
-const obj = {
-  [key]: milk,
-};
-console.log(obj);
-// { '[object Object]': { name: 'milk', price: 10, description: '맛있는 우유' } }
-// key는 object, 값은 milk가 됨
-
-const map2 = new Map([[key, milk]]);
-console.log(map2);
-// Map(1) { { name: 'milk', price: 10 } => { name: 'milk', price: 10, description: '맛있는 우유' } }
-
-// map과 object는 상당히 유사함.
-// 큰 차이점은 구조상으로는 찾아볼 수 없지만, 사용할 수 있는 함수에 대해서는 조금 다름.
-// object에서는 map에서 사용 가능한 함수들을 사용할 수 없음. => 사용할 수 있는 함수가 서로 다름.
-
-console.log(obj[key]);
-// { name: 'milk', price: 10, description: '맛있는 우유' }
-// object에서는 key에 바로 동적으로 접근할 수 있음.
-
-console.log(map2[key]);
-// undefined
-// object에서는 key에 바로 동적으로 접근할 수 없음.
-console.log(map2.get(key));
-// { name: 'milk', price: 10, description: '맛있는 우유' }
-// map에서 특정한 key를 찾으려면 get이라는 함수를 이용하여 key를 전달해서 해당하는 object를 받아올 수 있음.
