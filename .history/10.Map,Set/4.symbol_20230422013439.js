@@ -32,9 +32,4 @@ console.log(Symbol.keyFor(k1)); // key
 // 조금 더 유일한 key를 만들어야 할 때
 
 // Map 뿐만 아니라 object에서도 Symbol을 활용해볼 수 있음.
-const obj = { [k1]: "hello", [Symbol("key")]: 1 };
-console.log(obj);
-// { [Symbol(key)]: 'hello', [Symbol(key)]: 1 }
-console.log(obj[k1]); // hello
-console.log(obj[Symbol("key")]); // undefined
-// 위의 Symbol과 아래의 Symbol은 전혀 다른 key이기 때문에 undefined가 뜸.
+const obj = { [k1]: "hello" };

@@ -27,14 +27,3 @@ console.log(key1 === key2); // true
 console.log(Symbol.keyFor(k1)); // key
 // 해당 Symbol의 문자열을 알고 싶다면 Symbol의 keyFore을 이용하면 됨.
 // 전역 심벌 레지스트리에 보관된 심볼에 한해서만 이름을 가지고 올 수 있음.
-
-// Symbol은 Map에서 유용하게 사용할 수 있음
-// 조금 더 유일한 key를 만들어야 할 때
-
-// Map 뿐만 아니라 object에서도 Symbol을 활용해볼 수 있음.
-const obj = { [k1]: "hello", [Symbol("key")]: 1 };
-console.log(obj);
-// { [Symbol(key)]: 'hello', [Symbol(key)]: 1 }
-console.log(obj[k1]); // hello
-console.log(obj[Symbol("key")]); // undefined
-// 위의 Symbol과 아래의 Symbol은 전혀 다른 key이기 때문에 undefined가 뜸.

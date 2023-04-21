@@ -36,5 +36,4 @@ const obj = { [k1]: "hello", [Symbol("key")]: 1 };
 console.log(obj);
 // { [Symbol(key)]: 'hello', [Symbol(key)]: 1 }
 console.log(obj[k1]); // hello
-console.log(obj[Symbol("key")]); // undefined
-// 위의 Symbol과 아래의 Symbol은 전혀 다른 key이기 때문에 undefined가 뜸.
+console.log(obj[Symbol("key")]);
