@@ -6,7 +6,8 @@
 const set = new Set([1, 2, 3]);
 // 빈 set을 만들어도 되고
 // 배열을 전달해서 기존의 배열의 아이템을 기존으로 해서 set을 만들어볼 수도 있음.
-console.log(set); // Set(3) { 1, 2, 3 }
+console.log(set);
+// Set(3) { 1, 2, 3 }
 
 // 사이즈 확인
 console.log(set.size); // 3
@@ -20,24 +21,3 @@ set.forEach((item) => console.log(item));
 // 1
 // 2
 // 3
-
-for (const value of set.values()) {
-  console.log(value);
-  // 1
-  // 2
-  // 3
-}
-
-// 추가
-set.add(6);
-console.log(set); // Set(4) { 1, 2, 3, 6 }
-set.add(6);
-console.log(set); // 있는 걸 추가하려고 하면 무시됨
-
-// 삭제
-set.delete(6);
-console.log(set); // Set(3) { 1, 2, 3 }
-
-// 전부 삭제
-set.clear();
-console.log(set); // Set(0) {}
