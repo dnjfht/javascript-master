@@ -67,4 +67,3 @@ console.log(objs);
 // 새롭게 object 리터럴을 이용해서 만들면 새로운 object임.
 obj3.price = 12;
 console.log(objs);
-// Set(3) { { name: '🍓', price: 10 }, { name: '🥝', price: 5 }, { name: '🥝', price: 12 } }
