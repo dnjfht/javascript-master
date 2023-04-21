@@ -39,15 +39,5 @@ console.log(map);
 
 // 삭제
 map.delete("key3");
-console.log(map);
-// Map(2) { 'key1' => '🍓', 'key2' => '🍉' }
 
 // 전부 삭제
-map.clear();
-console.log(map);
-// Map(0) {}
-
-// map은 무조건 key를 이용하여 추가하고 삭제하고, 찾고 할 수 있음.
-// key가 유일한 고유한 아이디이기 때문.
-
-// map과 object와의 큰 차이점?
