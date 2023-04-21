@@ -6,13 +6,6 @@ const set = new Set(fruits);
 console.log(set);
 // Set(4) { '🍌', '🍎', '🍇', '🍑' }
 
-// 재사용 가능한 함수로 만들기
-function removeDuplication(array) {
-  return [...new Set(array)];
-}
-console.log(removeDuplication(fruits));
-// [ '🍌', '🍎', '🍇', '🍑' ]
-
 // 1.1 set 이용해보기(구글검색) - spread 연산자는 value만 쏙쏙 빼온다
 const setGoogle = new Set(fruits);
 const newArr = [...setGoogle];
@@ -51,10 +44,4 @@ function sameNumber(num1, num2) {
 }
 
 sameNumber(set1, set2);
-// Set(3) { 1, 2, 3 }
-
-function findIntersection(set1, set2) {
-  return new Set([...set1].filter((item) => set2.has(item)));
-}
-console.log(findIntersection(set1, set2));
 // Set(3) { 1, 2, 3 }

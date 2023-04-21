@@ -54,7 +54,6 @@ sameNumber(set1, set2);
 // Set(3) { 1, 2, 3 }
 
 function findIntersection(set1, set2) {
-  return new Set([...set1].filter((item) => set2.has(item)));
+  return new Set([...set1]).filter((item) => set2.has(item));
 }
 console.log(findIntersection(set1, set2));
-// Set(3) { 1, 2, 3 }
