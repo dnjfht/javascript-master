@@ -61,7 +61,3 @@ console.log(objs);
 // 퀴즈
 const obj3 = { name: "🥝", price: 5 };
 objs.add(obj3);
-console.log(objs);
-// Set(3) { { name: '🍓', price: 10 }, { name: '🥝', price: 5 }, { name: '🥝', price: 5 } }
-// 객체가 동일해 보이지만 세 개 다 다른 주소를 가지고 있음.
-// 새롭게 object 리터럴을 이용해서 만들면 새로운 object임.
