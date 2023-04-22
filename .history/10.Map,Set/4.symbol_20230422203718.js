@@ -22,7 +22,7 @@ console.log(key3 === key4); // false
 // 전역 심벌 레지스트리 (Global Symbol Registry)
 const k1 = Symbol.for("key");
 const k2 = Symbol.for("key");
-console.log(k1 === k2); // true
+console.log(key1 === key2); // true
 
 console.log(Symbol.keyFor(k1)); // key
 // 해당 Symbol의 문자열을 알고 싶다면 Symbol의 keyFor을 이용하면 됨.
