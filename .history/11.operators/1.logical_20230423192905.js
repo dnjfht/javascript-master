@@ -101,12 +101,12 @@ print(0); // 0
 
 function print2(message) {
   // 아무것도 주어지지 않았을 때 기본값 설정해주기
-  // || 값이 falshy한 경우 모두 설정(할당)이 됨 : 0, -0, null, undefined, ""
   const text = message || "Hello";
   console.log(text);
 }
 print2();
 // 아무것도 값을 전달하지 않으면 결과값으로 undefined가 나옴.
+// || 값이 falshy한 경우 모두 설정이 됨
 print2(undefined);
 print2(null);
 print2(0);
