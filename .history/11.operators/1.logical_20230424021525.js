@@ -93,7 +93,7 @@ function print(message = "Hi") {
 }
 print();
 // 아무 값을 전달하지 않으면 결과값으로 undefined가 나옴.
-// 하지만 default parameter를 설정해줌으로써 아무 값도 전달하지 않을시 Hi가 출력됨.
+// 하지만 defaylt parameter를 설정해줌으로써 아무 값도 전달하지 않을시 Hi가 출력됨.
 print(undefined);
 // undefined를 넣어줘도 아무 값도 넣지 않은 것과 동일하게 Hi가 출력됨.
 print(null); // null
