@@ -29,39 +29,13 @@ console.log(result);
 // obj1이 true니까 뒤에껀 확인해볼 필요 없이 앞에 obj1을 할당해주는 것.
 
 // 활용예
-// 조건이 truthy일 때, && 무언가를 해야 할 경우
-// 조건이 falshy일 때, || 무언가를 해야 할 경우
+// && 조건이 truthy일 때, 무언가를 해야 할 경우
+// || 조건이 falshy일 때, 무언가를 해야 할 경우
 
 function changeOwner(animal) {
-  if (!animal.owner) {
-    throw new Error("주인이 없어요!");
-  }
-  animal.owner = "바뀐 주인!";
+  if (!animal.owner) animal.owner = "바뀐 주인!";
 }
 
 function makeNewOwner(animal) {
-  if (animal.owner) {
-    throw new Error("주인이 있어요!");
-  }
   animal.owner = "새로운 주인!";
 }
-
-obj1.owner && changeOwner(obj1);
-obj2.owner && changeOwner(obj2);
-console.log(obj1);
-// obj1.owner가 falshy였기 때문에 changeOwner(obj1)가 실행되지 않음.
-// { name: '🐶' }
-
-console.log(obj2);
-// obj2.owner가 truthy였기 때문에 changeOwner(obj2)가 실행됨.
-// { name: '🐱', owner: '바뀐 주인!' }
-
-obj1.owner || makeNewOwner(obj1);
-obj2.owner || makeNewOwner(obj2);
-console.log(obj1);
-// obj1.owner가 falshy였기 때문에 뒤에 있는 changeOwner(obj1)를 실행해서 새로운 주인을 만들어줬음.
-// { name: '🐶', owner: '새로운 주인!' }
-
-console.log(obj2);
-// obj2.owner가 truthy였기 때문에 뒤에 있는 changeOwner(obj2)가 실행되지 않음.
-// { name: '🐱', owner: '바뀐 주인!' }

@@ -55,13 +55,3 @@ console.log(obj1);
 console.log(obj2);
 // obj2.owner가 truthy였기 때문에 changeOwner(obj2)가 실행됨.
 // { name: '🐱', owner: '바뀐 주인!' }
-
-obj1.owner || makeNewOwner(obj1);
-obj2.owner || makeNewOwner(obj2);
-console.log(obj1);
-// obj1.owner가 falshy였기 때문에 뒤에 있는 changeOwner(obj1)를 실행해서 새로운 주인을 만들어줬음.
-// { name: '🐶', owner: '새로운 주인!' }
-
-console.log(obj2);
-// obj2.owner가 truthy였기 때문에 뒤에 있는 changeOwner(obj2)가 실행되지 않음.
-// { name: '🐱', owner: '바뀐 주인!' }
