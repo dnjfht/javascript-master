@@ -17,7 +17,7 @@ function printName(obj) {
   // const ownerName = obj.owner.name;
   // 있는지 확인하지 않고 obj.owner.name을 바로 할당하면 없는 걸 할당하므로 바로 앱이 종료됨.
   // 그런데 이렇게 길게 사용하면 불편하기 때문에 옵셔널 체이닝 연산자를 이용하여 표현.
-  const ownerName = obj?.owner?.name;
+  const owerName = obj?.owner?.name;
   console.log(ownerName);
 }
 printName();
