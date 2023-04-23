@@ -83,7 +83,7 @@ console.log(price);
 // undefined
 
 // 기본값을 설정
-// defualt parameter는 값을 전달하지 않거나, undefined인 경우에만 설정이 가능함.
+// defualt parameter는 전달하지 않거나, undefined인 경우에만 설정이 가능함.
 function print(message = "Hi") {
   // 아무것도 주어지지 않았을 때 기본값 설정해주기
   // const text = message || "Hello";
@@ -108,4 +108,3 @@ print2();
 print2(undefined);
 print2(null);
 print2(0);
-// undefined, null, 0 어떤 값을 넣어줘도 Hello가 나오게 됨.

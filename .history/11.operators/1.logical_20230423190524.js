@@ -78,34 +78,4 @@ let item; // = { price: 1 };
 
 const price = item && item.price;
 console.log(price);
-// 현재 item이 false이므로 undefined가 할당이 되어서 나오게 됨.
-// 만약 item이 있다면, true이므로 item.price가 할당되어서 나오게 됨.
 // undefined
-
-// 기본값을 설정
-// defualt parameter는 값을 전달하지 않거나, undefined인 경우에만 설정이 가능함.
-function print(message = "Hi") {
-  // 아무것도 주어지지 않았을 때 기본값 설정해주기
-  // const text = message || "Hello";
-  console.log(message);
-  // console.log(text);
-}
-print();
-// 아무 값을 전달하지 않으면 결과값으로 undefined가 나옴.
-// 하지만 defualt parameter를 설정해줌으로써 아무 값도 전달하지 않을시 Hi가 출력됨.
-print(undefined);
-// undefined를 넣어줘도 아무 값도 넣지 않은 것과 동일하게 Hi가 출력됨.
-print(null); // null
-print(0); // 0
-
-function print2(message) {
-  // 아무것도 주어지지 않았을 때 기본값 설정해주기
-  const text = message || "Hello";
-  console.log(text);
-}
-print2();
-// 아무것도 값을 전달하지 않으면 결과값으로 undefined가 나옴.
-print2(undefined);
-print2(null);
-print2(0);
-// undefined, null, 0 어떤 값을 넣어줘도 Hello가 나오게 됨.
