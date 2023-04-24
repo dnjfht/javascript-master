@@ -22,9 +22,6 @@ function processFile(path) {
     console.log(error.stack);
     // 어떤 경로를 통해서 여기까지 와닿았는지
     content = "기본내용";
-    // error가 뜰시 content에 "기본내용"이 들어간 상태로 함수가 실행되도록 => hi기본내용
-  } finally {
-    console.log("성공하든 실패하든 마지막으로 리소스를 정리할 수 있음!");
   }
 
   const result = "hi" + content;
