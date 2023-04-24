@@ -9,18 +9,7 @@ function readFile(path) {
 }
 
 function processFile(path) {
-  // const content = readFile(path);
-  // 바로 호출하면 앱이 종료가 될 수 있음.
-  let content;
-  try {
-    content = readFile(path);
-    // 함수를 호출하는 부분을 try 내에서 해줘야 함.
-  } catch (error) {
-    console.log(error.name);
-    console.log(error.message);
-    console.log(error.stack);
-    // 어떤 경로를 통해서 여기까지 와닿았는지
-  }
+  const content = readFile(path);
 
   const result = "hi" + content;
   return result;
