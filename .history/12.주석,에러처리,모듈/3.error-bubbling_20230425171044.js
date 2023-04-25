@@ -8,17 +8,14 @@ function a() {
 }
 
 function b() {
-  try {
-    a();
-  } catch (err) {
-    // console.log("Catch!");
-    // 최대한 근접한 곳에서 error catch해줘도 됨.
-    // 근접한 곳에서 error를 잡아주게 되면 밑에서 error가 catch된 것은 출력되지 않음.
+  a();
 
-    console.log("생각해보니 이 error는 내가 핸들링할 수 없을 것 같군!");
-    throw err;
-    // 근접한 곳에서 error를 잡을 수 없을 것 같다면 error를 다시 던지면 됨.
-  }
+  //   try {
+  //     a();
+  //   } catch (err) {
+  //     console.log("Catched!");
+  //     // 최대한 근접한 곳에서 error catch해줘도 됨.
+  //   }
 }
 
 function c() {
