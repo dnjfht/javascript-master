@@ -1,5 +1,7 @@
 let count = 0;
-export default function increase() {
+function increase() {
   count++;
   console.log(count);
 }
+
+console.log(count);
