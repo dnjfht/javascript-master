@@ -2,7 +2,7 @@
 // try catch finally로 잡아주게 되면 더이상 앱이 종료되지 않음.
 
 function readFile(path) {
-  throw new Error("파일 경로를 찾을 수 없음");
+  // throw new Error("파일 경로를 찾을 수 없음");
   // error를 강제로 발생시킬 때 사용하는 것.
   // 이렇게 error를 던지게 되면 밑에 코드는 실행되지 않고 앱이 종료되게 됨.
   // but, 파일을 못 읽었다고 해서 앱이 종료되는 것은 좋지 못한 사용 experience임.
