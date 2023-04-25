@@ -18,13 +18,11 @@
 
 // 이렇게 파일끼리 서로서로 변경할 수 있는 건 버그에 치명적임.
 // 이걸 방지하기 위해서 각각의 파일 별로 모듈처럼 만드는 걸 쓸 수 있음.
-// import { increase, getCount } from "./counter.js";
-import * as counter from "./counter.js";
-// 그룹화해서 사용할 수 있음.
+import { increase, getCount } from "./counter.js";
 
-counter.increase();
-counter.increase();
-counter.increase();
+increase();
+increase();
+increase();
 
-const count = counter.getCount();
+const count = getCount();
 console.log(count);

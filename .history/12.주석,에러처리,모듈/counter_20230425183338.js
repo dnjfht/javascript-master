@@ -3,7 +3,3 @@ export function increase() {
   count++;
   console.log(count);
 }
-
-export function getCount() {
-  return count;
-}
