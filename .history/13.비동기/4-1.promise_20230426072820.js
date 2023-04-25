@@ -18,7 +18,7 @@ function runInDelay(seconds) {
 // promise가 끝이 나면, 성공적으로 된다면 .then을 이용하여 필요한 일을 수행하면 됨.
 // error가 발생했다면 catch를 통해서 error를 잡을 수 있음.
 // 최종적으로 무언가를 해야 한다면 finally에서 필요한 일을 수행하면 됨.
-runInDelay(2)
+runInDelay(-1)
   .then(() => {
     console.log("타이머 완료");
   })
