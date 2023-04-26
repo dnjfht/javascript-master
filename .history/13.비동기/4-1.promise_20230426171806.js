@@ -33,4 +33,3 @@ runInDelay(2)
 // 하지만 성공하는 케이스만 처리한 상태에서 error가 발생하게 되면
 // UnhandledPromiseRejectWarning 이라는 error가 뜨게 됨
 // promise가 reject 되었는데도 핸들링 되지 않았다!
-// Warning이라 앱이 강제 종료되지는 않음.
