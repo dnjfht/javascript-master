@@ -17,12 +17,11 @@ function getChicken() {
 // static 함수를 이용해서 resolve를 호출하면 promise를 만들고나서 즉각적으로 resolve 시킬 수 있음.
 
 getChicken() //
+  .then((chicken) => fetchEgg(chicken))
   .catch((error) => {
     console.log(error.name);
     return "🐔";
   })
-  .then((chicken) => fetchEgg(chicken))
-
   .then((egg) => fryEgg(egg))
   .then((friedEgg) => console.log(friedEgg));
 
