@@ -66,11 +66,10 @@ getBanana() //
     return fruitsArr;
   }) //
   .then(
-    getApple()
-      .then((apple) => {
-        fruitsArr.push(apple);
-        console.log("출력되나?", fruitsArr);
-        return fruitsArr;
-      })
-      .then((result) => console.log("배열 만들기", result))
-  );
+    getApple().then((apple) => {
+      fruitsArr.push(apple);
+      console.log(fruitsArr);
+      return fruitsArr;
+    })
+  )
+  .then((result) => console.log("배열 만들기", result));
