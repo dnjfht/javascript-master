@@ -56,8 +56,6 @@ Promise.allSettled([getBanana(), getApple(), getOrange()])
   .then((fruits) => console.log("all-settle", fruits))
   .catch((error) => console.log(error.name));
 
-// 빈 배열 만들어서 push하기
-
 let fruitsArr = [];
 
 getBanana() //
@@ -66,10 +64,10 @@ getBanana() //
     return fruitsArr;
   }) //
   .then(
-    getApple()
-      .then((apple) => {
-        fruitsArr.push(apple);
-        return fruitsArr;
-      })
-      .then((result) => console.log("배열 만들기", result))
-  );
+    getApple().then((apple) => {
+      fruitsArr.push(apple);
+      return fruitsArr;
+    })
+  )
+
+  .then((result) => console.log("배열 만들기", result));

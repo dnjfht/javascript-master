@@ -26,7 +26,7 @@ getBanana() //
     getApple() //
       .then((apple) => [banana, apple])
   )
-  .then((result) => console.log("기존 과일 배열", result));
+  .then((result) => console.log(result));
 
 // 순차적으로 진행을 하면 바나나를 가지고 오는데 1초, 사과를 가지고 오는데 3초, 총 4초가 걸림.
 // promise를 하나 하고 다음껄 실행하면 시간이 오래 걸릴 수 있기 때문에 병렬적으로 실행하는 방법이 있음.
@@ -56,8 +56,6 @@ Promise.allSettled([getBanana(), getApple(), getOrange()])
   .then((fruits) => console.log("all-settle", fruits))
   .catch((error) => console.log(error.name));
 
-// 빈 배열 만들어서 push하기
-
 let fruitsArr = [];
 
 getBanana() //
@@ -66,10 +64,9 @@ getBanana() //
     return fruitsArr;
   }) //
   .then(
-    getApple()
-      .then((apple) => {
-        fruitsArr.push(apple);
-        return fruitsArr;
-      })
-      .then((result) => console.log("배열 만들기", result))
-  );
+    getApple().then((apple) => {
+      console.log(apple);
+    })
+  )
+
+  .then((result) => console.log("배열 만들기", result));
