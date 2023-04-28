@@ -3,7 +3,6 @@
 // 오브젝트 형태의 텍스트 포맷
 // 오브젝트를 JSON으로 변환할 수도 있고 JSON을 오브젝트로 변환할 수도 있음.
 
-// JOSN의 static 함수 두 개!
 // Stringify(object): JSON => 오브젝트를 JSON 형태로 바꿔주는 Stringify 함수
 // 오브젝트 데이터를 서버에 보내기 전에 먼저 JSON으로 변환한 다음에 문자열을 서버에 보냄.
 
@@ -17,6 +16,3 @@ const seungmin = {
     console.log("eat");
   },
 };
-const json = JSON.stringify(seungmin);
-console.log(seungmin);
-console.log(json);

@@ -18,5 +18,3 @@ const seungmin = {
   },
 };
 const json = JSON.stringify(seungmin);
-console.log(seungmin);
-console.log(json);
