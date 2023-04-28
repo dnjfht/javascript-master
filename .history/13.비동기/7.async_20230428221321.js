@@ -38,7 +38,5 @@ async function fetchFruits() {
   // 그냥 값을 return할 지라도 함수에 async라는 키워드가 붙여졌기 때문에 이 배열을 resolve하는 promise가 만들어짐.
 }
 
-// 함수를 호출하면 promise가 return이 됨.
-// promise 안에서 await들이 비동기 적으로 처리가 되다가 다 기다려지면 값을 resolve하는 promise가 됨.
-
 fetchFruits().then((fruitsArr) => console.log(fruitsArr));
+// 함수를 호출하면 promise가 return이 됨.

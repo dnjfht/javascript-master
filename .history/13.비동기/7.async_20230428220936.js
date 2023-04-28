@@ -32,13 +32,8 @@ async function fetchFruits() {
   const apple = await getApple();
   // 사과를 가져올 때까지 기다림.
   // 그냥 return하면 promise가 있기 때문에 await를 사용해야 함.
-  // promise를 return하는 함수를 호출할 때는 await를 써서 기다렸다가 promise 값이 resolve가 되면 그 값을 반환.
 
   return [banana, apple];
-  // 그냥 값을 return할 지라도 함수에 async라는 키워드가 붙여졌기 때문에 이 배열을 resolve하는 promise가 만들어짐.
 }
-
-// 함수를 호출하면 promise가 return이 됨.
-// promise 안에서 await들이 비동기 적으로 처리가 되다가 다 기다려지면 값을 resolve하는 promise가 됨.
 
 fetchFruits().then((fruitsArr) => console.log(fruitsArr));
